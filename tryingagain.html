@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	#yawk {
+
+		background-image:url(yawkyawk2v2.png);
+		width: 200px;
+		height: 300px;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		-webkit-filter:hue-rotate(180deg);
+		animation-name:colorchange;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		}
+		@keyframes colorchange
+
+	{ 0% {-webkit-filter:hue-rotate(0deg);}
+	25% {-webkit-filter:hue-rotate(90deg);}
+	50% {-webkit-filter:hue-rotate(180deg);}
+	75% {-webkit-filter:hue-rotate(270deg);}
+	100% {-webkit-filter:hue-rotate(360deg);}
+
+	}
+
+</style>
+
+</head>
+<body>
+<p><b>Yawk Yawk Color Change</b></p>
+<p>By: Elise, Selim, and Maisie </p>
+
+<div id="yawk"></div> 
+
+</body>
+</html>
