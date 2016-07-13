@@ -1,0 +1,39 @@
+ 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    #map {
+    	position: relative;
+    	width: 30vw;
+    	height: 30vw;
+    	background-color: lightblue
+    }
+    .mermaid {
+    	position: absolute;
+    	width: 50px;
+    	height: 50px;
+    	border-radius: 50%;
+    	background-color: pink;
+    	left: 50%;
+    	top: 50%;
+    }
+    </style>
+</head>
+
+<body>
+	<div id='map'>
+		<div class='mermaid'></div>
+	</div>
+    <script>
+    var map = document.querySelector('#map');
+    document.map.addEventListener('mousemove', function(event) {
+    	console.log("x", event.offsetX/map.offsetWidth * 100 + '%');
+    	console.log("y", event.offsetY/map.offsetHeight * 100 + '%');
+    });
+    </script>
+</body>
+
+</html>
